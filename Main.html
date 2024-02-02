@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section>
+        <h1>Connexion de la page</h1>
+        <form action="">
+            <label for="username">Your username</label>
+
+            <input type="text" id="username">
+
+            <label for="password">Your password</label>
+
+            <input type="text" id="password">
+            <button type="submit" onclick=recup()>Créer</button>
+            
+        </form>
+    </section>
+    <script>
+        function recup(){
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            localStorage.setItem("user", user);
+            localStorage.setItem("pw",pass);
+
+}
+    </script>
+</body>
+</html>
